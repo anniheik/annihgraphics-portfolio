@@ -1,0 +1,27 @@
+Software Development Skills Front-End, Online course
+
+Anni Heikkinen, !!student number!!
+
+
+LEARNING DIARY, FRONT END MODULE
+
+
+Thursday 22. June
+General course introduction and first lesson
+
+Today I started the course as a FITech student, I have graduated from LUT Business Analytics in the beginning of 2021.
+I've been working as a data scientist for couple of years now but as we are moving more towards web applications
+I've needed to learn developing proper UI's for my applications instead of having users run them in command prompt. 
+At the first glance this front end course seems to give me all the tools to start working a bit more user friendly applications.
+
+The course details seemed clear and it was easy to choose code VSCode as code editor as it is the one I use every day.
+I wasn't familiar with the bitbucket and setting that up seemed a bit tricky so I decided to go with GitHub for easier
+version control as I'm more familiar with that. 
+
+Did all the steps described in the part 1 video about the initial workflow. Created index-page with classic hello world,
+set up sass and some styles to the first page. No issues and everything went very smoothly. It's good to continue from here
+next time. Also, committed the changes to Git with gitignore file to drop the mode modules from the version control.
+
+
+
+
