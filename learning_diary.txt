@@ -25,3 +25,7 @@ next time. Also, committed the changes to Git with gitignore file to drop the mo
 
 
 
+Notes:
+
+-how to start running? - left click and open live server
+-compile css? - npm run sass
