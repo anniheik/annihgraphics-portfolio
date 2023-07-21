@@ -40,6 +40,25 @@ most of the main elements that I wanted to learn. My design portfolio is current
 during this project I was planning to recreate the portfolio on my own and perhaps later end the Squarespace
 subscription in case the end product looks at least as nice as the original and I manage to publish the site.
 
+Friday 21. July 
+
+Took a break from this course due to summer vacation and had forgotten quite a lot of stuff in between. Needed a proper
+refresh but after reading the learning diary, checking the code I had written previously got back in track in just 30 minutes.
+
+I followed the third video and learned to assign properties to the html classes in JS (not 100 % sure what they are called). Got the
+menu button working with JavaScript and scss as shown in the video. I also learned how to check the browser development tools to check for
+details and if the page is working as expected.
+
+In video 4 I started having more issues. First the portrait wasn't showing right, solved that simply by cropping the image separately and adding
+"background-size: cover" property to the portrait class. The portrait was transparent and I solved this issue by removing the opacity 0.9 from the 
+menu class and added the transparencies straight to the nav and branding backgrounds. Someone had the issue in the comments of the video and I found
+the solution there. Overall the comment section has been very helpful but otherwise I've been trying to think for solutions myself or by Googling.
+
+The navigation side has been tricky as the links coming from the right transition isn't working and I couldn't find the solution in the comments or myself yet.
+I did find out that in the index.html my navigation list was not written correctly. The links were not inside each list item. Hence the nav-item class 
+formatting wasn't working. After fixing that all the links got lost and that's caused by the transition again. Couldn't find solution to this issue
+and got tired so stopped the 4th video at 19:09.
+
 
 
 
