@@ -7,7 +7,7 @@ LEARNING DIARY, FRONT END MODULE
 
 
 Thursday 22. June
-General course introduction and first lesson
+General course introduction and first part
 
 Today I started the course as a FITech student, I have graduated from LUT Business Analytics in the beginning of 2021.
 I've been working as a data scientist for couple of years now but as we are moving more towards web applications
@@ -21,6 +21,25 @@ version control as I'm more familiar with that.
 Did all the steps described in the part 1 video about the initial workflow. Created index-page with classic hello world,
 set up sass and some styles to the first page. No issues and everything went very smoothly. It's good to continue from here
 next time. Also, committed the changes to Git with gitignore file to drop the mode modules from the version control.
+
+Sunday 25. June
+Second part
+Today I started working on the second video of the series and at first I needed to remind myself how do I
+opened the site on a live server. Checked quickly the previous video and found the button from options for running
+the script on live server. Then I noticed that the changes I made in sass weren't moving to the open app. 
+Checked the previous video again and found the command npm run sass to see the chanegs. 
+
+I was good to continue with the part 2 video and followed the instructions without too many issues. It has been 
+a bit tricky to follow the structure of the html script as there are lots of lines. At some point I had missed
+adding an id to the body tag and later I couldn't make my background image visible. I tried to confirm that my 
+image is in correct format, in the correct url etc. but after checking the video comments, someone else had the
+same issue as well and found the missing id from the body. 
+
+Otherwise I started deviate from the tutorial design a bit to move more towards my own project but still keeping
+most of the main elements that I wanted to learn. My design portfolio is currently made in Squarespace platform but
+during this project I was planning to recreate the portfolio on my own and perhaps later end the Squarespace
+subscription in case the end product looks at least as nice as the original and I manage to publish the site.
+
 
 
 
