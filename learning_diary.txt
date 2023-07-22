@@ -59,7 +59,7 @@ I did find out that in the index.html my navigation list was not written correct
 formatting wasn't working. After fixing that all the links got lost and that's caused by the transition again. Couldn't find solution to this issue
 and got tired so stopped the 4th video at 19:09.
 
-
+Saturday 22. July
 
 
 
