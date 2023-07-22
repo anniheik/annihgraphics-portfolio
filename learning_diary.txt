@@ -61,6 +61,19 @@ and got tired so stopped the 4th video at 19:09.
 
 Saturday 22. July
 
+Started with the previous navigation issue but could not solve it. Decided to leave the links sliding from the right out as I didn't find it 
+very important element anyways.
+
+Continued the video 4 and created the responsive mixins with the small/medium screensize contents. Here I started to deviate from the tutorial 
+as I didn't like the look of the responsive (small) navigation in the video. I decided to keep the font size larger, make both of the sides (portrait and the menu)
+slide from the same side when opening the menu and also played around with the menu alignments. Overall I'm not a fan of keeping my image in the menu
+so I might take that away later in the process but for now I have kept it there.
+
+Decided to continue to the video 5 and added the conditional text color to all of the texts and the navigation button. Also tested it and worked as expected
+when I changed the primary color to darker one. Created the about page and copied the index code to the about page but then I lost focus and decided to end the video
+at 5:54 for today.
+
+
 
 
 Notes:
