@@ -73,7 +73,18 @@ Decided to continue to the video 5 and added the conditional text color to all o
 when I changed the primary color to darker one. Created the about page and copied the index code to the about page but then I lost focus and decided to end the video
 at 5:54 for today.
 
+Tuesday 8. August
 
+Back at it again. Started where I finished last week with the About page video (number 5). After summer vacation I started to work on the UI for an application
+I'm building at work and after working on this course until this point I had actually learned enough HTML/CSS to actually build simple but at least usable and somewhat good 
+looking user interface for the application.
+
+For my own project, I found the gridding very useful. I have built websites using Squarespace and using the grid actually reminded be of working in more
+visual website builder tools. I found it very intuitive and easy to understand. So far, this is the biggest takeaway from this course and I think is very useful 
+when I continue working on the project further especially in the portfolio part where I'm planning to present my work.
+
+The sticky footer tip was useful too, I had seen the footer not showing correctly on other webpages and wouldn't have noticed to fix it myself if it wasn't mentioned
+in the video. Otherwise today I just quicky went through the video and didn't differ from it too much this time.
 
 
 Notes:
