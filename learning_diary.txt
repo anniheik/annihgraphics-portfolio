@@ -6,6 +6,8 @@ Anni Heikkinen, !!student number!!
 LEARNING DIARY, FRONT END MODULE
 
 
+Tutorial Part:
+
 Thursday 22. June
 General course introduction and first part
 
@@ -86,6 +88,38 @@ when I continue working on the project further especially in the portfolio part 
 The sticky footer tip was useful too, I had seen the footer not showing correctly on other webpages and wouldn't have noticed to fix it myself if it wasn't mentioned
 in the video. Otherwise today I just quicky went through the video and didn't differ from it too much this time.
 
+Thursday 10. August
+
+Today I watched the 6th video and created the work page and contact page. Now that I'm almost done with the project I started to deviate from
+the tutorial even more. I didn't like how the work page looked like and for example got rid of the buttons below the projects and instead
+the project page should open from clicking the image (with hoover effect) like I already have in my current portfolio. Also, since this
+portfolio page shows graphic design projects instead of coding projects, I wanted to keep the images larger than the tutorial. I think the 7th video
+included mainly the same things already seen in previous videos. However, it reminded me how to use the Font Awesome Icons and the hoover effect (had 
+forgotten how we did that and used the easeOut with it).
+
+I did check the 7th video for deployment but did not deploy the site just yet. Next I will customize the page to look more like the one I have up and running
+in Squarespace platfrom.
+
+Customization Part:
+
+Thursday 10. August
+
+Continued with the customization process. My intended layout is pretty simplified version of the tutorial version. First I started to get rid of things
+like my portrait everywhere (especially in the navigation). The intention is to highlight the work more and keep my face in the about page. Also,
+I tend to do graphic design work to Finnish companies so I decided to switch everything to Finnish. 
+
+Changing the navigation was a bit more difficult than I expected as the portrait was "glued" very thightly to the navigation. After removing and
+adding parts of code back in sass and html, I got it to look as I expected: sliding from top to the left side and with smaller devices same but
+full screen.
+
+Then I started working on the about page where I wanted just two columns, one with my pic and one with about me text. Succesfully got there
+using the grid layout. However, the padding was acting weirdly when I swithed to smaller device. Fixed that just by adjusting own padding
+for the smaller device size.
+
+I decided to put my socials as links and icons to the footer and made the footer bigger. I added my logo to the left side of the header too.
+
+Next time I'll finish the work page, add separate pages for showing the work and it's description. I would also like to change the fonts and
+instead of color variation play around with the font weights.
 
 Notes:
 

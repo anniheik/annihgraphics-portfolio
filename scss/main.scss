@@ -36,9 +36,17 @@ a {
 }
 
 header {
-    position:fixed;
     z-index: 2;
     width: 100%;
+    
+    //https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line checked how to add logo
+    .logo img {
+        position:absolute;
+        padding:2rem;
+        width:250px;
+        height:auto;
+
+    }
 }
 
 .text-secondary {
@@ -48,20 +56,7 @@ header {
 
 main {
     padding: 4rem;
-    min-height: calc(100vh - 60px);
-
-    .icons {
-        margin-top: 1rem;
-
-        a {
-            padding: 0.4rem;
-
-            &:hover {
-                color: $secondary-color;
-                @include easeOut();
-            }
-        }
-    }
+    min-height: calc(100vh - 150px);
 
     &#home {
         overflow: hidden;
@@ -75,39 +70,26 @@ main {
 .about-info {
     display: grid;
     grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3 1fr);
-    grid-gap: 30px;
+    'bioimage bio';
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
+    padding:10rem;
 
     .bio-image{
         grid-area: bioimage;
         margin: auto;
-        width: 250px;
-        height: 250px;
+        object-fit: cover;
+        width: 400px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
     }
     
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
-    }
-    
-    .job-1{
-        grid-area: job1;
-    }
-    
-    .job-2{
-        grid-area: job2;
-    }
-    
-    .job-3{
-        grid-area: job3;
-    }
-    
-    .job {
-        background: darken($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -127,28 +109,26 @@ main {
     }
 }
 
-// Button styles
-.btn {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-
-    &:hover {
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
-}
-
-.btn-light{
-    @extend .btn;
-}
 
 #main-footer {
     text-align: center;
     padding: 1rem;
     color: set-text-color($primary-color);
-    height: 60px;
+    height: 150px;
+
+    .icons {
+        margin-top: 1rem;
+
+        a {
+            padding: 0.5rem;
+            font-size: 10px;
+
+            &:hover {
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
 }
 
 @import 'mobile';
