@@ -11,7 +11,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.5;
 }
 
@@ -26,7 +26,7 @@ h1,h2,h3 {
 
     &.sm-heading{
         margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
+        //padding: 0.2rem 1rem;
     }
 }
 
@@ -50,8 +50,13 @@ header {
 }
 
 .text-secondary {
-    color: $secondary-color;
+    color: set-text-color($primary-color);
+    font-weight: 600;
 
+}
+
+p {
+    font-size:20px;
 }
 
 main {
@@ -60,13 +65,52 @@ main {
 
     &#home {
         overflow: hidden;
+        text-align: center;
         h1 {
             margin-top: 20vh;
         }
+        //button design inspiration from https://getcssscan.com/css-buttons-examples (button 23)
+        button {
+            margin:4rem;
+            font-family: 'Raleway', sans-serif;
+            background-color: $primary-color;
+            border: 1px solid set-text-color($primary-color);
+            box-sizing: border-box;
+            color: set-text-color($primary-color);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 40px;
+            padding: 10px 50px;
+            position: relative;
+            text-align: center;
+
+            &:hover {
+                opacity: 0.5;
+                @include easeOut;
+            }
+          }
     }
 
+    &#contact {
+        overflow: hidden;
+        text-align: center;
+        h3 {
+            margin-top: 30vh;
+        }
+        .email-link {
+            padding: 1rem;
+
+            &:hover {
+                opacity: 0.5;
+                @include easeOut;
+            }
+        }
+    }
 }
 
+//about page
 .about-info {
     display: grid;
     grid-template-areas:
@@ -79,7 +123,7 @@ main {
         grid-area: bioimage;
         margin: auto;
         object-fit: cover;
-        width: 400px;
+        width: 350px;
         height: auto;
         align-items: center;
         justify-content: center;
@@ -95,12 +139,15 @@ main {
 
 //Work/projects
 .projects {
+    padding-top:4rem;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 0.7rem;
-
+    
     img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
 
         &:hover {
             opacity: 0.5;
@@ -109,6 +156,32 @@ main {
     }
 }
 
+//work project pages
+
+.project-info {
+    display: grid;
+    grid-template-areas:
+    'projectimage projectdesc';
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    padding-top: 4rem;
+
+    .project-image{
+        grid-area: projectimage;
+        object-fit: cover;
+        width: 50vw;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-desc {
+        grid-area: projectdesc;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 #main-footer {
     text-align: center;
@@ -124,8 +197,8 @@ main {
             font-size: 10px;
 
             &:hover {
-                color: $secondary-color;
-                @include easeOut();
+                opacity: 0.5;
+                @include easeOut;
             }
         }
     }

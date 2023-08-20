@@ -32,6 +32,10 @@
 
         }
     }
+    &:hover {
+        opacity: 0.5;
+        @include easeOut;
+    }
 }
 
 // menu overlay
@@ -78,7 +82,7 @@
 
         // show current page with secondary color
         &.current > a {
-            color: $secondary-color
+            font-weight: 600;
         }
         
     }
@@ -95,8 +99,25 @@
         @include easeOut;
 
         &:hover {
-            color: $secondary-color;
+            opacity: 0.5;
+            @include easeOut;
         }
+
+        // hover effect from https://dev.to/kiranrajvjd/10-simple-navigation-bar-hover-animations-1980
+        /*&:after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            display: block;
+            bottom: 15%;
+            @include easeOut;
+          }
+          &:hover::after {
+            width: 100%;
+            height: 3px;
+            background-color: black;
+          }*/
     }
 }
 

@@ -9,7 +9,6 @@ LEARNING DIARY, FRONT END MODULE
 Tutorial Part:
 
 Thursday 22. June
-General course introduction and first part
 
 Today I started the course as a FITech student, I have graduated from LUT Business Analytics in the beginning of 2021.
 I've been working as a data scientist for couple of years now but as we are moving more towards web applications
@@ -22,12 +21,12 @@ version control as I'm more familiar with that.
 
 Did all the steps described in the part 1 video about the initial workflow. Created index-page with classic hello world,
 set up sass and some styles to the first page. No issues and everything went very smoothly. It's good to continue from here
-next time. Also, committed the changes to Git with gitignore file to drop the mode modules from the version control.
+next time. Also, committed the changes to Git with gitignore file to drop the node modules from the version control.
 
 Sunday 25. June
-Second part
+
 Today I started working on the second video of the series and at first I needed to remind myself how do I
-opened the site on a live server. Checked quickly the previous video and found the button from options for running
+open the site on a live server. Checked quickly the previous video and found the button from options for running
 the script on live server. Then I noticed that the changes I made in sass weren't moving to the open app. 
 Checked the previous video again and found the command npm run sass to see the chanegs. 
 
@@ -120,6 +119,57 @@ I decided to put my socials as links and icons to the footer and made the footer
 
 Next time I'll finish the work page, add separate pages for showing the work and it's description. I would also like to change the fonts and
 instead of color variation play around with the font weights.
+
+Friday 18. August
+
+Shortly opened the project and changed fonts using Google fonts to my page. Couldn't find as close one to my previous font but went with classic
+Montserrat for now. I was looking for a way to use templates (or base) in HTML like Python Flask allows you to do to e.g. keep header and footer
+editing in one place. That would make it easier to do small changes to parts that are same on all pages, but couldn't find feasible way yet. 
+It seems to be done using JS but didn't start working on that yet. Also, when I changed the font, I changed the current page to show as bold
+instead of secondary color in the navigation.
+
+Saturday 19. August
+
+Again didn't have very much time but changed the navigation hover effect to line ease out. Wasn't able to do it myself completely but found an example Online
+(added link to comment). Adjusted it a bit from the example to line up with the overall line sizes and took the line a bit down from the text.
+I chose Raleway font from Google and added that to front page. I'm still looking for the template mentioned yesterday so didn't add the fonts 
+to other pages just yet. The new font is also a bit tricky as I wasn't able to add font weights. Need to take a look into that next time.
+
+Sunday 20. August
+
+Started working on the project finishing touches. Started by fixing the issue with the font weight and found out that I needed to add the wanted
+weights to the link tag url where the Google font link is defined. 
+
+Next I started fixing all the pages with the needed texts and doing final touches to the designs. Decided to change the front page with centering
+the text and adding a button directing to the portfolio since the page seemed a bit empty. Changed the about page text from placeholder text to the
+actual about me text and changed the image as well. Otherwise I kept the page formatting as it was left earlier. Contact page got also alingned again
+to the center and added the actual contact me page text. I made the email to be a link with "mailto:" so that clicking the link it would open
+a new email with the email address already filled in (https://www.rapidtables.com/web/html/mailto.html). This might cause spam issues later but for now I decided to go with this one.
+
+Previously I struggled with choosing the hover effect and after going back and forth with the line easeout I had created previously and just
+changing the opacity on hover, I decided to make all the hover effects the same and go with the opacity to 50% version as it was compatible
+with all the buttons/links etc. that I wanted to have the effect. It seems more cohesive now and way nicer with the minimalistic theme I have been
+creating. 
+
+Then I started working on the most important part of the site, the work page and adding the more detailed pages of each project. First I started
+with rearragement of the work page to be in two rows in wide viewport and one on any of the smaller ones. Working on this I tried if I could
+define the size based on the viewport width and by adding size with vw instead of vh or rem, I was able to make the images follow the width and
+make the responsiveness much smoother. Then I ran into issues with the image sizes not being equal as the images themselves are not the same size.
+Luckily found an answer here: https://stackoverflow.com/questions/65055008/how-can-i-make-images-in-a-grid-all-the-same-height-without-stretching-them.
+I needed to cover the grid area with the image and make the image full size (h and w 100%).
+
+
+Then I created a new folder for the pages with more info about the projects. I wanted to keep them separate from the main folder and have 
+work/project structure when opening a project. I am not sure if just adding the under another folder is the way to go but I decided to try it
+for now. I noticed that all the references went wrong after copying the about page to the folder but solved that by using "../" before every reference
+to make it point to one folder up. Then I just adjusted the formatting and addded the needed images to the copied page and then made 3 more 
+copies of that to make detail pages for all the projects. 
+
+Lastly I added the socials links to all the pages and this was one of the parts that I would have wanted to solve with the templates but
+I didn't implement that after all as I had already created the pages without it.
+
+Now the project is ready for deployment which I'll do next time.
+
 
 Notes:
 

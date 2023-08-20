@@ -19,6 +19,9 @@
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
+  .menu-btn:hover {
+    opacity: 0.5;
+    transition: all 0.2s ease-out; }
 
 .menu {
   position: fixed;
@@ -49,7 +52,7 @@
     transform: translate3d(0, 0, 0);
     transition: all 0.2s ease-out; }
     .menu .nav-item.current > a {
-      color: #ed8689; }
+      font-weight: 600; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -59,9 +62,24 @@
     font-weight: 300;
     color: black;
     text-decoration: none;
-    transition: all 0.2s ease-out; }
+    transition: all 0.2s ease-out;
+    /*&:after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            display: block;
+            bottom: 15%;
+            @include easeOut;
+          }
+          &:hover::after {
+            width: 100%;
+            height: 3px;
+            background-color: black;
+          }*/ }
     .menu .nav-link:hover {
-      color: #ed8689; }
+      opacity: 0.5;
+      transition: all 0.2s ease-out; }
 
 * {
   box-sizing: border-box; }
@@ -71,7 +89,7 @@ body {
   color: black;
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/bg.jpg);
@@ -93,8 +111,7 @@ h1, h2, h3 {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
+    margin-bottom: 2rem; }
 
 a {
   color: black;
@@ -110,15 +127,48 @@ header {
     height: auto; }
 
 .text-secondary {
-  color: #ed8689; }
+  color: black;
+  font-weight: 600; }
+
+p {
+  font-size: 20px; }
 
 main {
   padding: 4rem;
   min-height: calc(100vh - 150px); }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    text-align: center; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home button {
+      margin: 4rem;
+      font-family: 'Raleway', sans-serif;
+      background-color: #ececec;
+      border: 1px solid black;
+      box-sizing: border-box;
+      color: black;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 40px;
+      padding: 10px 50px;
+      position: relative;
+      text-align: center; }
+      main#home button:hover {
+        opacity: 0.5;
+        transition: all 0.2s ease-out; }
+  main#contact {
+    overflow: hidden;
+    text-align: center; }
+    main#contact h3 {
+      margin-top: 30vh; }
+    main#contact .email-link {
+      padding: 1rem; }
+      main#contact .email-link:hover {
+        opacity: 0.5;
+        transition: all 0.2s ease-out; }
 
 .about-info {
   display: grid;
@@ -130,7 +180,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     object-fit: cover;
-    width: 400px;
+    width: 350px;
     height: auto;
     align-items: center;
     justify-content: center; }
@@ -141,14 +191,36 @@ main {
     justify-content: center; }
 
 .projects {
+  padding-top: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.7rem; }
   .projects img {
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
     .projects img:hover {
       opacity: 0.5;
       transition: all 0.2s ease-out; }
+
+.project-info {
+  display: grid;
+  grid-template-areas: 'projectimage projectdesc';
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  padding-top: 4rem; }
+  .project-info .project-image {
+    grid-area: projectimage;
+    object-fit: cover;
+    width: 50vw;
+    height: auto;
+    align-items: center;
+    justify-content: center; }
+  .project-info .project-desc {
+    grid-area: projectdesc;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center; }
 
 #main-footer {
   text-align: center;
@@ -161,8 +233,38 @@ main {
       padding: 0.5rem;
       font-size: 10px; }
       #main-footer .icons a:hover {
-        color: #ed8689;
+        opacity: 0.5;
         transition: all 0.2s ease-out; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center; }
+    .projects img {
+      width: 90vw;
+      height: auto; }
+  .project-info {
+    grid-template-areas: 'projectimage' 'projectdesc';
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-top: 10rem;
+    grid-gap: 5rem;
+    align-items: center;
+    justify-content: center; }
+    .project-info .project-image {
+      grid-area: projectimage;
+      object-fit: cover;
+      width: 90vw;
+      height: auto;
+      align-items: center;
+      justify-content: center; }
+    .project-info .project-desc {
+      grid-area: projectdesc;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -186,13 +288,65 @@ main {
     grid-template-columns: 1fr;
     padding: 0;
     padding-top: 10rem;
-    grid-gap: 5rem; } }
+    grid-gap: 5rem; }
+  .projects {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center; }
+    .projects img {
+      width: 90vw;
+      height: auto; }
+  .project-info {
+    grid-template-areas: 'projectimage' 'projectdesc';
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-top: 10rem;
+    grid-gap: 5rem;
+    align-items: center;
+    justify-content: center; }
+    .project-info .project-image {
+      grid-area: projectimage;
+      object-fit: cover;
+      width: 90vw;
+      height: auto;
+      align-items: center;
+      justify-content: center; }
+    .project-info .project-desc {
+      grid-area: projectdesc;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center; }
+    .projects img {
+      width: 90vw;
+      height: auto; }
+  .project-info {
+    grid-template-areas: 'projectimage' 'projectdesc';
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-top: 10rem;
+    grid-gap: 5rem;
+    align-items: center;
+    justify-content: center; }
+    .project-info .project-image {
+      grid-area: projectimage;
+      object-fit: cover;
+      width: 90vw;
+      height: auto;
+      align-items: center;
+      justify-content: center; }
+    .project-info .project-desc {
+      grid-area: projectdesc;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio';
     grid-template-columns: 1fr;
