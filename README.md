@@ -1,4 +1,4 @@
-# annih-portfolio
+# annihgraphics-portfolio
 
 FITech course project annih
 
