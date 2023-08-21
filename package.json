@@ -1,22 +1,24 @@
 {
-  "name": "fitech-fe-2023",
+  "name": "annihgraphics-portfolio",
   "version": "1.0.0",
   "description": "FITech Front End course project",
   "main": "index.js",
+  "homepage": "https://nannih.github.io/annihgraphics-portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages d-dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nannih/fitech-fe-2023.git"
+    "url": "git+https://github.com/nannih/annihgraphics-portfolio.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nannih/fitech-fe-2023/issues"
+    "url": "https://github.com/nannih/annihgraphics-portfolio/issues"
   },
-  "homepage": "https://github.com/nannih/fitech-fe-2023#readme",
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "node-sass": "^9.0.0"
   }
 }
