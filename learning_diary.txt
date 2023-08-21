@@ -170,8 +170,12 @@ I didn't implement that after all as I had already created the pages without it.
 
 Now the project is ready for deployment which I'll do next time.
 
+Monday 21. August
 
-Notes:
+Started getting ready for deploying the website. Went through all the pages and tested if everything works as expected. Found that on the 
+portfolio details pages the logo redirecting to front page didn't work but the issue was that the reference was pointing to index in the work
+folder so just fixed it by making it point to the upper folder index.html. Otherwise the number of references in the portfolio is a bit limited
+but thought it would be enough for this course and add more later when I have time to prepare the mockups for other projects as well.
 
--how to start running? - left click and open live server
--compile css? - npm run sass
+Then I remembered that I used to have favicon in the browser tab in my previous portfolio so checked w3schools and found a way to add it 
+(https://www.w3schools.com/html/html_favicon.asp).

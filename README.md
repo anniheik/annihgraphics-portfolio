@@ -1,2 +1,5 @@
-# fitech-fe-2023
+# annih-portfolio
+
 FITech course project annih
+
+Also acts as a portfolio website for my own business
